@@ -24,7 +24,7 @@ function replicateSparks (_sparksRow) {
 		<span id="customtext-a" style="color: #3f0;">a</span> \
 		<span id="customtext-a" style="color: #007bfe;">t</span> \
         <span id="customtext-a" style="color: #8a2be2;">e</span> \
-		the flag?\
+		the missing flag?\
 		</p>'
     document.body.prepend(textOverlay)
 
@@ -61,3 +61,4 @@ function yourFunction() {
     // Your code to run when the website is clicked
 	document.getElementById("my_audio").play();
 }
+
