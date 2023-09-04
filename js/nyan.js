@@ -18,11 +18,12 @@ function replicateSparks (_sparksRow) {
     textOverlay.id = 'text-overlay'
     textOverlay.innerHTML = '<p class="customtext"> \
 		Can you \
-		<span id="customtext-a" style="color: red;">c</span> \
-		<span id="customtext-a" style="color: orange;">a</span> \
-		<span id="customtext-a" style="color: yellow;">t</span> \
-		<span id="customtext-a" style="color: green;">c</span> \
-		<span id="customtext-a" style="color: purple;">h</span> \
+		<span id="customtext-a" style="color: #f00;">l</span> \
+		<span id="customtext-a" style="color: #f90;">o</span> \
+		<span id="customtext-a" style="color: #ff0;">c</span> \
+		<span id="customtext-a" style="color: #3f0;">a</span> \
+		<span id="customtext-a" style="color: #007bfe;">t</span> \
+        <span id="customtext-a" style="color: #8a2be2;">e</span> \
 		the flag?\
 		</p>'
     document.body.prepend(textOverlay)
