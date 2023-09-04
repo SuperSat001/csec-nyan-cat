@@ -624,6 +624,7 @@ body {
 
 .customtext {
   font-family: 'Nabla', cursive;
+  color: white;
   font-size: 80px;
   white-space: nowrap; /* Prevent text from wrapping */
   animation: scroll-marquee 5s linear infinite; /* Adjust the duration as needed */
