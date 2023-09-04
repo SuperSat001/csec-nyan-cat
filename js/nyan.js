@@ -42,3 +42,21 @@ function replicateSparks (_sparksRow) {
 		cycleFrames(nyanCat, currentFrame)
 	}, 70)
 })()
+
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById("my_audio").play();
+    }, 2000); // 2000 milliseconds (2 seconds) delay
+};
+
+// Add a click event listener to the document
+document.addEventListener("click", function() {
+    // Call your function here
+    yourFunction();
+});
+
+// Define your function
+function yourFunction() {
+    // Your code to run when the website is clicked
+	document.getElementById("my_audio").play();
+}
