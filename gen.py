@@ -9,7 +9,7 @@ start = """
 	<link rel="stylesheet" href="css/nyan.css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Nabla&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee+Spice&family=Rubik+Iso&display=swap" rel="stylesheet">
 </head>
 <body style="background:"""
 
@@ -50,6 +50,7 @@ end = """;">
 
 from sys import argv
 color = argv[1]
+name = argv[2]
 site = start + color + end
 
 def cfilter(color):
@@ -59,5 +60,5 @@ def cfilter(color):
             ret += c
     return ret
 
-with open(f"{cfilter(color)}.html", "w") as file:
+with open(f"{name}.html", "w") as file:
     file.write(site)

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Nabla&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee+Spice&family=Rubik+Iso&display=swap');
 
 @font-face {
   font-family: 'octicons';
@@ -339,11 +339,11 @@ body {
 }
 /* blue */
 .cold:before {
-  background-image: linear-gradient(to right, #09f 49px, transparent 49px, transparent 92px);
+  background-image: linear-gradient(to right, #007bfe 49px, transparent 49px, transparent 92px);
 }
 /* purple */
 .cold {
-  background-image: linear-gradient(to right, #63f 49px, transparent 49px, transparent 92px);
+  background-image: linear-gradient(to right, #8a2be2 49px, transparent 49px, transparent 92px);
 }
 .rainbow,
 .hot:after,
@@ -625,7 +625,7 @@ body {
 }
 
 .customtext {
-  font-family: 'Nabla', cursive;
+  font-family: 'Bungee Spice', cursive;
   color: white;
   font-size: 80px;
   white-space: nowrap; /* Prevent text from wrapping */
