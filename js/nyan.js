@@ -23,7 +23,7 @@ function replicateSparks (_sparksRow) {
 		<span id="customtext-a" style="color: yellow;">t</span> \
 		<span id="customtext-a" style="color: green;">c</span> \
 		<span id="customtext-a" style="color: purple;">h</span> \
-		the nyan flag?\
+		the flag?\
 		</p>'
     document.body.prepend(textOverlay)
 

@@ -620,7 +620,7 @@ body {
   z-index: 1;
   overflow: hidden; /* Hide overflowing content */
   display: inline-block;
-  font-size: 100px;
+  font-size: 60px;
   font-family: 'Rubik Iso', cursive;
 }
 
@@ -635,6 +635,7 @@ body {
 #customtext-a {
   font-family: 'Bungee Shade', cursive;
   color: #f00;
+  padding: 2px; border: 1px solid rgba(255, 255, 255, 1);
 }
 
 @keyframes scroll-marquee {
