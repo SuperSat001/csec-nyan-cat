@@ -1,4 +1,4 @@
-start = """
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
@@ -11,9 +11,7 @@ start = """
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Nabla&display=swap" rel="stylesheet">
 </head>
-<body style="background:"""
-
-end = """;">
+<body style="background:cyan;">
 
 
 	<div class="sparks-combo">
@@ -46,18 +44,3 @@ end = """;">
 	<script src="js/nyan.js"></script>
 </body>
 </html>
-"""
-
-from sys import argv
-color = argv[1]
-site = start + color + end
-
-def cfilter(color):
-    ret = ""
-    for c in color:
-        if c.isalnum():
-            ret += c
-    return ret
-
-with open(f"{cfilter(color)}.html", "w") as file:
-    file.write(site)
