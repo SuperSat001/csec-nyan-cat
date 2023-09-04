@@ -6,14 +6,29 @@ function cycleFrames (_nyanCat, _currentFrame) {
 }
 
 function replicateSparks (_sparksRow) {
-	const numberOfRowsToCoverEntireScreen = Math.ceil(document.body.offsetHeight / _sparksRow.offsetHeight)
-	const newSparksRows = document.createElement('div')
+    const numberOfRowsToCoverEntireScreen = Math.ceil(document.body.offsetHeight / _sparksRow.offsetHeight)
+    const newSparksRows = document.createElement('div')
 
-	for (let a = 0; a < numberOfRowsToCoverEntireScreen-1; a++) {
-		newSparksRows.append(_sparksRow.cloneNode(true))
-	}
+    for (let a = 0; a < numberOfRowsToCoverEntireScreen - 1; a++) {
+        newSparksRows.append(_sparksRow.cloneNode(true))
+    }
 
-	document.body.prepend(newSparksRows)
+    // Create and prepend the text overlay division
+    const textOverlay = document.createElement('div')
+    textOverlay.id = 'text-overlay'
+    textOverlay.innerHTML = '<p class="customtext"> \
+		Can you \
+		<span id="customtext-a" style="color: red;">c</span> \
+		<span id="customtext-a" style="color: orange;">a</span> \
+		<span id="customtext-a" style="color: yellow;">t</span> \
+		<span id="customtext-a" style="color: green;">c</span> \
+		<span id="customtext-a" style="color: purple;">h</span> \
+		the nyan flag?\
+		</p>'
+    document.body.prepend(textOverlay)
+
+    // Prepend the replicated spark rows
+    document.body.prepend(newSparksRows)
 }
 
 (function () {

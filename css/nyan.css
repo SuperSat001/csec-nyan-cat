@@ -10,41 +10,12 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #09f;
   overflow: hidden;
 }
 body {
   font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
-.repo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: black;
-  background: white;
-  padding: 6px 6px;
-  outline: none;
-  z-index: 4;
-}
-.repo i {
-  float: left;
-  cursor: pointer;
-}
-.repo span {
-  float: left;
-  padding-left: 0;
-  line-height: 32px;
-  overflow: hidden;
-  width: 0;
-  max-width: 0;
-  white-space: nowrap;
-  transition: max-width 1s;
-}
-.repo:hover span {
-  padding-left: 6px;
-  width: auto;
-  max-width: 200px;
-}
+
 .octicon {
   font: normal normal 32px octicons;
   line-height: 1;
@@ -624,4 +595,50 @@ body {
   background: linear-gradient(#999, #999) no-repeat, linear-gradient(#999, #999) no-repeat, linear-gradient(#999, #999) no-repeat;
   background-size: 18px 6px, 22px 6px, 6px 6px;
   background-position: 0 0, 6px 6px, 28px 12px;
+}
+#text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Make the background fully transparent */
+  text-align: center;
+  z-index: 1;
+  overflow: hidden; /* Hide overflowing content */
+  display: inline-block;
+}
+
+#flag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Make the background fully transparent */
+  text-align: center;
+  z-index: 1;
+  overflow: hidden; /* Hide overflowing content */
+  display: inline-block;
+  font-size: 100px;
+  font-family: 'Rubik Iso', cursive;
+}
+
+.customtext {
+  font-family: 'Nabla', cursive;
+  font-size: 80px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: scroll-marquee 5s linear infinite; /* Adjust the duration as needed */
+}
+
+#customtext-a {
+  font-family: 'Bungee Shade', cursive;
+  color: #f00;
+}
+
+@keyframes scroll-marquee {
+  0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+      transform: translateX(-100%); /* Move completely off-screen to the left */
+  }
 }
