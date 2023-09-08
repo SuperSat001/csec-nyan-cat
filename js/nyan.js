@@ -24,7 +24,7 @@ function replicateSparks (_sparksRow) {
 		<span id="customtext-a" style="color: #3f0;">a</span> \
 		<span id="customtext-a" style="color: #007bfe;">t</span> \
         <span id="customtext-a" style="color: #8a2be2;">e</span> \
-		the missing flag?\
+		the <u>missing</u> flag?\
 		</p>'
     document.body.prepend(textOverlay)
 

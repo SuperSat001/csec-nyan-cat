@@ -341,7 +341,7 @@ body {
 .cold:before {
   background-image: linear-gradient(to right, #007bfe 49px, transparent 49px, transparent 92px);
 }
-/* purple */
+/* violet */
 .cold {
   background-image: linear-gradient(to right, #8a2be2 49px, transparent 49px, transparent 92px);
 }
@@ -624,13 +624,23 @@ body {
   font-family: 'Rubik Iso', cursive;
 }
 
+@keyframes scroll-marquee {
+  0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+      transform: translateX(-100%); /* Scroll to the left, disappearing off-screen */
+  }
+}
+
 .customtext {
   font-family: 'Bungee Spice', cursive;
   color: white;
-  font-size: 80px;
+  font-size: 70px;
   white-space: nowrap; /* Prevent text from wrapping */
   animation: scroll-marquee 5s linear infinite; /* Adjust the duration as needed */
 }
+
 
 #customtext-a {
   font-family: 'Bungee Shade', cursive;

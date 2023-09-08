@@ -60,5 +60,5 @@ def cfilter(color):
             ret += c
     return ret
 
-with open(f"{name}.html", "w") as file:
+with open(f"{name}cat.html", "w") as file:
     file.write(site)
